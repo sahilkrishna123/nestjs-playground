@@ -7,9 +7,11 @@ import { ProductController } from './product/product.controller';
 import { EmployeeModule } from './employee/employee.module';
 import { StudentModule } from './student/student.module';
 import { CustomerModule } from './customer/customer.module';
+import { CustomPipeNameTransformModule } from './custom-pipe-name-transform/custom-pipe-name-transform.module';
+
 
 @Module({
-  imports: [EmployeeModule, StudentModule, CustomerModule],
+  imports: [EmployeeModule, StudentModule, CustomerModule, CustomPipeNameTransformModule],
   controllers: [AppController, UserController, ProductController],
   providers: [AppService, ProductService],
 })
